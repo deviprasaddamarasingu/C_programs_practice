@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main()
+{
+    int arr[] = {1,3,4,5,2,6,7,8};
+    int *i = &arr+1,*j=arr;
+    /* i and j are pointers of type int because of that it is returning 
+    element of array. 
+    if (char*)i - (char*)j then it will return memory in bytes
+    */
+    printf("&a+1= %u ,a+1= %u\n size=%u bytes=%u\n",i,j,(i-j),(char*)i - (char*)j);
+    return 0;
+}
